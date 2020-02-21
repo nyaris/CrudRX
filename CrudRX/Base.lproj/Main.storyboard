@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrudRX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W8x-CQ-Ddy">
+                                <rect key="frame" x="0.0" y="306" width="414" height="590"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.79807898116438358" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3w-q7-2Nc">
+                                <rect key="frame" x="50" y="82" width="316" height="185"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do seu treinador" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65J-jm-2xY">
+                                        <rect key="frame" x="28" y="33" width="261" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeBut" highlightedImage="pokeAberta" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-pZ-Ut3">
+                                        <rect key="frame" x="0.0" y="131" width="105" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Hzn-xX-htF"/>
+                                            <constraint firstAttribute="width" constant="105" id="dcW-D5-XlG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uye-Sp-1ZR">
+                                        <rect key="frame" x="124" y="131" width="68" height="30"/>
+                                        <state key="normal" title="Cadastrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1E-yE-vln"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tipo do seu pokemon favorito" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12H-fx-OLu">
+                                        <rect key="frame" x="28" y="82" width="261" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.83500107020547942" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="12H-fx-OLu" firstAttribute="top" secondItem="65J-jm-2xY" secondAttribute="bottom" constant="15" id="02V-RQ-4ka"/>
+                                    <constraint firstItem="3xr-pZ-Ut3" firstAttribute="leading" secondItem="B3w-q7-2Nc" secondAttribute="leading" id="BgR-dv-J0d"/>
+                                    <constraint firstAttribute="height" constant="185" id="HQg-pP-VUe"/>
+                                    <constraint firstItem="12H-fx-OLu" firstAttribute="leading" secondItem="B3w-q7-2Nc" secondAttribute="leading" constant="28" id="HzX-NP-Y3z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="185" id="JWP-7c-hGM"/>
+                                    <constraint firstItem="uye-Sp-1ZR" firstAttribute="top" secondItem="12H-fx-OLu" secondAttribute="bottom" constant="15" id="MwJ-5J-TMC"/>
+                                    <constraint firstItem="uye-Sp-1ZR" firstAttribute="centerX" secondItem="B3w-q7-2Nc" secondAttribute="centerX" id="Qge-ej-5Vg"/>
+                                    <constraint firstAttribute="trailing" secondItem="12H-fx-OLu" secondAttribute="trailing" constant="27" id="V3C-kQ-81h"/>
+                                    <constraint firstItem="65J-jm-2xY" firstAttribute="leading" secondItem="B3w-q7-2Nc" secondAttribute="leading" constant="28" id="WNP-T5-INT"/>
+                                    <constraint firstAttribute="width" constant="316" id="Y1O-ds-yJz"/>
+                                    <constraint firstAttribute="width" secondItem="B3w-q7-2Nc" secondAttribute="height" multiplier="316:185" id="cky-cf-3zf"/>
+                                    <constraint firstAttribute="bottom" secondItem="3xr-pZ-Ut3" secondAttribute="bottom" id="fC4-e0-dKq"/>
+                                    <constraint firstAttribute="trailing" secondItem="65J-jm-2xY" secondAttribute="trailing" constant="27" id="gcE-CM-bSm"/>
+                                    <constraint firstAttribute="bottom" secondItem="uye-Sp-1ZR" secondAttribute="bottom" constant="24" id="qiQ-ZW-igq"/>
+                                    <constraint firstItem="65J-jm-2xY" firstAttribute="top" secondItem="B3w-q7-2Nc" secondAttribute="top" constant="33" id="xYk-DN-z0M"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se cadastre!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-F5-9Kr">
+                                <rect key="frame" x="50" y="44" width="213" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W8x-CQ-Ddy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ag-LQ-2m0"/>
+                            <constraint firstItem="W8x-CQ-Ddy" firstAttribute="top" secondItem="B3w-q7-2Nc" secondAttribute="bottom" constant="39" id="9LC-wd-QjG"/>
+                            <constraint firstItem="B3w-q7-2Nc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Cwo-KE-Pon"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ocn-F5-9Kr" secondAttribute="trailing" constant="131" id="LFz-TK-47T"/>
+                            <constraint firstAttribute="trailing" secondItem="W8x-CQ-Ddy" secondAttribute="trailing" id="Nia-Cr-Kvw"/>
+                            <constraint firstItem="B3w-q7-2Nc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Qpr-s2-CqE"/>
+                            <constraint firstAttribute="bottom" secondItem="W8x-CQ-Ddy" secondAttribute="bottom" id="UXc-7r-w8j"/>
+                            <constraint firstItem="W8x-CQ-Ddy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bgx-ef-S2c"/>
+                            <constraint firstItem="Ocn-F5-9Kr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qCY-Vk-vb1"/>
+                            <constraint firstItem="B3w-q7-2Nc" firstAttribute="top" secondItem="Ocn-F5-9Kr" secondAttribute="bottom" constant="8" id="toZ-gK-uT9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pokemonFavoriteTextField" destination="12H-fx-OLu" id="Wwe-A2-g42"/>
+                        <outlet property="tableView" destination="W8x-CQ-Ddy" id="wEN-jl-rU0"/>
+                        <outlet property="trainerTextField" destination="65J-jm-2xY" id="dSE-ic-t4E"/>
+                        <outlet property="viewCad" destination="B3w-q7-2Nc" id="35o-R5-Ipk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="137.27678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokeAberta" width="512" height="481"/>
+        <image name="pokeBut" width="324" height="160"/>
+    </resources>
+</document>
